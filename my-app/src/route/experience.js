@@ -1,7 +1,14 @@
 import React from "react";
+import Navbar from "../components/navbar";
+
+import Footer from "../components/footer";
 
 const experience = () => {
-  return <div>experience</div>;
+  return <div>
+    <Navbar />
+    
+    <Footer />
+</div>;
   
 };
 
