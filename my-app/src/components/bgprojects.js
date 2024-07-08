@@ -1,9 +1,9 @@
-import "./bg_project_styles.css";
+import "./bgprojectstyles.css";
 
 
 import React, { Component } from 'react';
 
-class bg_projects extends Component {
+class bgprojects extends Component {
   render() {
   return (
     <div className="bg">
@@ -16,4 +16,4 @@ class bg_projects extends Component {
 }
 };
 
-export default bg_projects;
+export default bgprojects;
