@@ -1,6 +1,6 @@
-import pro1 from "../assets/1.jpeg"
-import pro2 from "../assets/2.jpeg"
-import pro3 from "../assets/3.jpeg"
+import pro1 from "../assets/1.png"
+import pro2 from "../assets/2.png"
+import pro3 from "../assets/3.png"
 
 
 const projectcarddata = [
@@ -14,8 +14,7 @@ const projectcarddata = [
     {
         imgsrc: pro2,
         title: "security analyst",
-        text: "have you secured your data, are you looking for constant monitoring of your security  " ,
-        text: "you have found the right guy for the job",
+        text: "have you secured your data, are you looking for constant monitoring of your security , you have found the right guy for the job " ,
         view: "/contacts"
     },
 
@@ -25,6 +24,8 @@ const projectcarddata = [
         text: "i want to prove that your security is not that great and maybe give you solutions for you problem to avoid later system compromisation. are you in or out " ,
         view: "/contacts"
     },
+
+
 
     
 ];

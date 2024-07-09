@@ -3,7 +3,7 @@ import Navbar from "../components/navbar";
 import Bgprojects from "../components/bgprojects";
 import Footer from "../components/footer";
 import Pricingcard from "../components/pricingcard";
-import Workcard from "../components/workcard";
+import Work from "../components/work";
 
 
 const projects = () => {
@@ -11,7 +11,7 @@ const projects = () => {
     <Navbar />
     <Bgprojects heading="PROJECTS." text="some of my most recent works" />
     <Pricingcard />
-    <Workcard />
+    <Work />
     <Footer />
 </div>;
 };
