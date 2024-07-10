@@ -10,8 +10,9 @@ const projects = () => {
   return <div>
     <Navbar />
     <Bgprojects heading="PROJECTS." text="some of my most recent works" />
-    <Pricingcard />
     <Work />
+    <Pricingcard />
+    
     <Footer />
 </div>;
 };

@@ -14,7 +14,7 @@ const work = () => {
                     <Workcard
                     key={ind}
                     imgsrc={val.imgsrc}
-                    titile={val.title}
+                    title={val.title}
                     text={val.text}
                     view={val.view}
                     />
