@@ -17,7 +17,7 @@
 
 .bg::before{
     content: "";
-    background: url("../assets/image7.jpeg");
+    background: url("../../assets/image7.jpeg");
     background-size: cover;
     background-position: center top;
     height: 100%;

@@ -1,9 +1,9 @@
 import React from "react";
-import Navbar from "../components/navbar";
-import Bgprojects from "../components/bgprojects";
-import Footer from "../components/footer";
-import Pricingcard from "../components/pricingcard";
-import Work from "../components/work";
+import Navbar from "../components/layout/navbar";
+import Bgprojects from "../components/project/bgprojects";
+import Footer from "../components/layout/footer";
+import Pricingcard from "../components/project/pricingcard";
+import Work from "../components/project/work";
 
 
 const projects = () => {

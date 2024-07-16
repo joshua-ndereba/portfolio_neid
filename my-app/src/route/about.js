@@ -1,16 +1,16 @@
 import React from "react";
+
 import Navbar from "../components/layout/navbar";
-import Form from "../components/contact/form";
+import Aboutcontent from "../components/aboutme/aboutcontent";
 import Footer from "../components/layout/footer";
 import Bgprojects from "../components/project/bgprojects";
-const contacts = () => {
+
+const about = () => {
   return <div>
     <Navbar />
-    <Bgprojects  heading="Contacts" text="let us have a conversation." />
-    <Form />
+    <Bgprojects  heading="About" text="list of all im skiled in" image="ing" />
+    <Aboutcontent />
     <Footer />
-  </div>;
-  
+</div>;
 };
-
-export default contacts;
+export default about;

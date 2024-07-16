@@ -1,6 +1,6 @@
-import pro1 from "../assets/1.png"
-import pro2 from "../assets/2.png"
-import pro3 from "../assets/3.png"
+import pro1 from "../../assets/1.png"
+import pro2 from "../../assets/2.png"
+import pro3 from "../../assets/3.png"
 
 
 const projectcarddata = [
