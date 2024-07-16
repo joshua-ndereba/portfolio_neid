@@ -14,19 +14,19 @@ const experiencedata = [
     {
         imgsrc: pro2,
         title: "NAKURU BOYS HIGH SCHOOL",
-        text: "NAKURU BOYS HIGH SCHOOL \n KENYA CERTIFICATE OF SECONDARY EDUCATION \n FROM 2018 TO 2021 \n " 
+        text: "\n KENYA CERTIFICATE OF SECONDARY EDUCATION \n FROM 2018 TO 2021 \n " 
        
     },
 
     {
         imgsrc: pro3,
         title: "TRY HACK ME ",
-         text: "TRY HACK ME\n INTENSE CYBER SECURITY TRAINING \n"        
+         text: "\n INTENSE CYBER SECURITY TRAINING \n"        
     },
 
     {
         imgsrc: pro4,
-        title: "game development",
+        title: " XamK university in Finland game development",
         text: "game development. intensified, self-paced game development program"
         
     },

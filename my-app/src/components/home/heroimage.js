@@ -8,12 +8,7 @@ import { Link } from "react-router-dom";
 const Heroimage = () => {
   return (
     <div className="hero">
-      <marquee
-      bgcolor="maroon"
-      direction ="right"
-      behavior="alternate">
-        <h1>Joshua Ndereba</h1>
-      </marquee> 
+     
         <div className="mask">
             <img className="image0" src={image0} alt="image0" />
 
@@ -29,12 +24,7 @@ const Heroimage = () => {
             <Link to="/contacts" className="btn btn-light">contact me</Link>         
           </div>
         </div>
-        <marquee
-      bgcolor="maroon"
-      direction ="right"
-      behavior="alternate">
-        <h1>GO TO CONTACTS FOR SERVICES</h1>
-      </marquee> 
+       
     </div>
   )
 }

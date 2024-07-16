@@ -8,7 +8,7 @@ import { NavLink } from "react-router-dom"
 const experincecontent = () => {
   return (
     <div className="education">
-        <div className="left">
+        <h2><h1>EDUCATION</h1></h2>
         <div className="educationContainer">
         {Experiencedata.map((val, ind) => {
                 return(
@@ -23,8 +23,15 @@ const experincecontent = () => {
                 );
         })}
         
-        <div className="exp-card">
-          <div className="exp-image">
+        
+        
+        
+           
+
+        </div>
+        <h1>EXPERIENCE</h1>
+        <div className="content-card">
+          <div className="content-image">
               <img src={web} alt=""/>
               <h1>WEB DEVELOPMENT</h1>
               <div className="pro-btns">
@@ -34,11 +41,6 @@ const experincecontent = () => {
             className="btn">source</NavLink>
         </div>
           </div>
-
-        </div>
-        </div>
-
-           
 
         </div>
     </div>
