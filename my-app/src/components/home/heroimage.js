@@ -16,6 +16,7 @@ const Heroimage = () => {
         <div className="content">
           <p>HI, I AM  A FRONTEND DEVELOPER</p>
           <h1>I AM ALSO A SECURITY ANALYST</h1>
+          <h1>ALSO A DEVOPS ENGINEER</h1>
           
           <div>
 

@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link } from "react-scroll"; // Use react-scroll for smooth scrolling
 import "./navbarstyles.css";
 import React, { useState } from "react";
 import {FaBars} from "react-icons/fa";
@@ -21,18 +21,16 @@ const Navbar = () => {
 
   return (
     <div className={color ? "header header-bg": "header"}>
-        <Link to="/">
+        <Link to="home" smooth={true} duration={500}>
             <h1>Portfolio</h1>
         </Link>
 
         <ul className={click ? "nav-menu active" : "nav-menu"}>
-            <li> <Link to="/">home</Link> </li>
-            <li> <Link to="/about">about</Link> </li> 
-            <li> <Link to="/experience">experience</Link> </li>
-            <li> <Link to="/projects">projects</Link> </li>  
-            
-            <li> <Link to="/contacts">contacts</Link> </li> 
-            
+            <li><Link to="/home" smooth={true} duration={500}>Home</Link></li>
+            <li><Link to="/about" smooth={true} duration={500}>About</Link></li>
+            <li><Link to="/experience" smooth={true} duration={500}>Experience</Link></li>
+            <li><Link to="/projects" smooth={true} duration={500}>Projects</Link></li>
+            <li><Link to="/contacts" smooth={true} duration={500}>Contacts</Link></li>
         </ul>
 
         <div className="hamburger" onClick={handleClick}>

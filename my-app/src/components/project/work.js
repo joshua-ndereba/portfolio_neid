@@ -4,13 +4,15 @@ import workcarddata from "./workcarddata"
 import React from 'react';
 
 
-const work = () => {
+const work = ({ filter }) => {
   return (
     <div className="work-container">
         <h1 className="project-heading">projects</h1>
         <div className="project-container">
-            {workcarddata.map((val, ind) => {
-                return(
+            {workcarddata
+              .filter((val) => val.title.toLowerCase().includes(filter.toLowerCase()))
+              .map((val, ind) => {
+                return (
                     <Workcard
                     key={ind}
                     imgsrc={val.imgsrc}
@@ -18,16 +20,11 @@ const work = () => {
                     text={val.text}
                     view={val.view}
                     />
-                
                 );
             })}
-
         </div>
     </div>
-           
-  )
-}
-
-
+  );
+};
 
 export default work;
