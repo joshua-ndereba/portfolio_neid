@@ -40,18 +40,18 @@ const Navbar = () => {
           </NavLink>
         </li>
         <li>
+          <NavLink to="/certifications" onClick={handleClick}>
+            Certifications
+          </NavLink>
+        </li>
+        <li>
           <NavLink to="/projects" onClick={handleClick}>
             Projects
           </NavLink>
         </li>
         <li>
           <NavLink to="/contacts" onClick={handleClick}>
-            Contacts
-          </NavLink>
-        </li>
-        <li>
-          <NavLink to="/certifications" onClick={handleClick}>
-            Certifications
+            Contact
           </NavLink>
         </li>
       </ul>
