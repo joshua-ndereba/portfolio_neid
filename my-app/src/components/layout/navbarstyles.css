@@ -61,7 +61,10 @@
         left: -100%;
         z-index: -3;
         transition: 0.5s;
+<<<<<<< HEAD
 
+=======
+>>>>>>> d1dded0 ( reinitialized git repo lost all my previous logs, added on mobile responsiveness)
     }
 
     .nav-menu.active {
@@ -70,10 +73,23 @@
 
     .nav-menu li {
         padding: 1rem 0;
+<<<<<<< HEAD
 
     }
 
     .nav-menu li a {
         font-size: 2rem;
+=======
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .header h1 {
+        font-size: 1.3rem;
+    }
+    
+    .nav-menu li a {
+        font-size: 1.1rem;
+>>>>>>> d1dded0 ( reinitialized git repo lost all my previous logs, added on mobile responsiveness)
     }
 }

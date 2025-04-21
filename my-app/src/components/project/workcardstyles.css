@@ -4,6 +4,7 @@
 
 }
 
+<<<<<<< HEAD
 .project-container{
     width: 500px;
     
@@ -80,5 +81,64 @@
   color: #fff;
   text-align: center;
   margin-top: 10px;
+=======
+.project-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .project-container {
+    width: 100%;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .project-card {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .image-container {
+    height: 200px;
+  }
+
+  .project-info {
+    padding: 1rem;
+  }
+
+  .tech-stack {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .tech-tag {
+    font-size: 0.8rem;
+    padding: 0.2rem 0.5rem;
+  }
+
+  .project-documentation {
+    margin-top: 1rem;
+    padding: 1rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .project-heading {
+    font-size: 1.5rem;
+    padding: 2rem 0 1rem;
+  }
+
+  .project-card {
+    margin: 0.5rem 0;
+  }
+>>>>>>> d1dded0 ( reinitialized git repo lost all my previous logs, added on mobile responsiveness)
 }
 

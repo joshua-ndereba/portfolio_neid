@@ -41,6 +41,7 @@
 
 .cert-grid {
   display: grid;
+<<<<<<< HEAD
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
 }
@@ -55,6 +56,90 @@
 .cert-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+=======
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  padding: 1rem;
+}
+
+.cert-card {
+  background: rgba(26, 25, 25, 0.9);
+  border-radius: 12px;
+  padding: 1.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.cert-card:hover, .cert-card:active {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(77, 77, 255, 0.2);
+}
+
+.cert-card:hover::after {
+  content: "Click to view";
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  background: rgba(77, 77, 255, 0.9);
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+.cert-image-container {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.cert-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: opacity 0.3s ease;
+}
+
+.loading .cert-image {
+  opacity: 0;
+}
+
+.loading-spinner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30px;
+  height: 30px;
+  border: 3px solid rgba(255, 255, 255, 0.1);
+  border-top-color: #4d4dff;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+.cert-error {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.cert-error::after {
+  content: "Image unavailable";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 0.9rem;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+>>>>>>> d1dded0 ( reinitialized git repo lost all my previous logs, added on mobile responsiveness)
 }
 
 .modal-overlay {
@@ -63,18 +148,28 @@
   left: 0;
   right: 0;
   bottom: 0;
+<<<<<<< HEAD
   background: rgba(0, 0, 0, 0.85);
+=======
+  background: rgba(0, 0, 0, 0.95);
+>>>>>>> d1dded0 ( reinitialized git repo lost all my previous logs, added on mobile responsiveness)
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 1000;
   backdrop-filter: blur(5px);
+<<<<<<< HEAD
+=======
+  padding: 1rem;
+  animation: fadeIn 0.3s ease;
+>>>>>>> d1dded0 ( reinitialized git repo lost all my previous logs, added on mobile responsiveness)
 }
 
 .modal-content {
   background: #1a1919;
   padding: 2rem;
   border-radius: 15px;
+<<<<<<< HEAD
   width: 90%;
   max-width: 800px;
   max-height: 90vh;
@@ -91,6 +186,14 @@
   color: #fff;
   font-size: 1.5rem;
   cursor: pointer;
+=======
+  width: 100%;
+  max-width: 1000px;
+  max-height: 90vh;
+  overflow: auto;
+  position: relative;
+  animation: slideUp 0.3s ease;
+>>>>>>> d1dded0 ( reinitialized git repo lost all my previous logs, added on mobile responsiveness)
 }
 
 .cert-date {
@@ -100,6 +203,7 @@
 }
 
 .cert-preview {
+<<<<<<< HEAD
   margin-top: 1.5rem;
   width: 100%;
   min-height: 500px;
@@ -135,5 +239,92 @@
   
   .pdf-viewer {
     height: 400px;
+=======
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  padding: 1rem;
+  margin-top: 1rem;
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cert-preview img {
+  max-width: 100%;
+  max-height: 70vh;
+  object-fit: contain;
+  border-radius: 4px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+/* Enhanced Mobile Responsiveness */
+@media screen and (max-width: 768px) {
+    .certification-filters {
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        margin: 1rem 0;
+    }
+
+    .filter-btn {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+        flex: 1 1 auto;
+        min-width: 100px;
+    }
+
+    .certifications-container {
+        padding: 1rem;
+    }
+
+    .category-title {
+        font-size: 1.4rem;
+    }
+
+    .cert-grid {
+        gap: 1rem;
+    }
+
+    .cert-card {
+        margin: 0;
+    }
+
+    .modal-content {
+        width: 95%;
+        height: auto;
+        max-height: 90vh;
+        margin: 1rem;
+        padding: 1rem;
+    }
+
+    .cert-preview {
+        height: auto;
+        min-height: 200px;
+    }
+
+    .cert-preview img {
+        max-height: 60vh;
+    }
+}
+
+/* Larger screens */
+@media screen and (min-width: 1200px) {
+  .cert-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .modal-content {
+    max-width: 1200px;
+>>>>>>> d1dded0 ( reinitialized git repo lost all my previous logs, added on mobile responsiveness)
   }
 }

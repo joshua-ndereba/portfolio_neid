@@ -4,6 +4,7 @@
     background-color: rgba(19,19,19,0.8);
 }
 
+<<<<<<< HEAD
 .footer-container{
     max-width: 1140px;
     margin: auto;
@@ -58,6 +59,46 @@ p{
     .footer-container p {
         white-space: nowrap;
     }
+=======
+.footer-container {
+  max-width: 1140px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  padding: 0 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    padding: 2rem 0;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 0 1rem;
+  }
+
+  .right p {
+    position: relative;
+    max-height: 3.2em;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+
+  .right p.expanded {
+    max-height: 500px;
+  }
+
+  .read-more {
+    color: #4d4dff;
+    text-decoration: underline;
+    cursor: pointer;
+    margin-top: 0.5rem;
+    display: inline-block;
+  }
+>>>>>>> d1dded0 ( reinitialized git repo lost all my previous logs, added on mobile responsiveness)
 }
 
 
