@@ -24,7 +24,7 @@ const projectcarddata = [
     },
     {
         imgsrc: pro3,
-        title: "ExpressUs Bus Ticketing System",
+        title: "Express Bus Ticketing System",
         text: "Full-stack bus ticketing system with user authentication, booking management, and payment integration.",
         technologies: ["Node.js", "Express", "MongoDB", "React"],
         githubUrl: "https://github.com/joshua-ndereba/expressbus.git",
