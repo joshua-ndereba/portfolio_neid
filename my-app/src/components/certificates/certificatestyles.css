@@ -1,42 +1,9 @@
-.certification-filters {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-  margin: 2rem 0;
-  padding: 0 1rem;
-}
 
-.filter-btn {
-  padding: 0.8rem 1.5rem;
-  border: none;
-  border-radius: 5px;
-  background: #1a1919;
-  color: #fff;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.filter-btn.active {
-  background: #4d4dff;
-  transform: translateY(-2px);
-}
-
-.certifications-container {
-  max-width: 1200px;
-  margin: 0 auto;
+.certification-container {
+  background: linear-gradient(135deg, rgba(77, 77, 255, 0.1), rgba(255, 255, 255, 0.1));
   padding: 2rem;
-}
-
-.category-section {
-  margin-bottom: 3rem;
-}
-
-.category-title {
-  color: #fff;
-  margin-bottom: 1.5rem;
-  font-size: 1.8rem;
-  border-bottom: 2px solid #4d4dff;
-  padding-bottom: 0.5rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .cert-grid {

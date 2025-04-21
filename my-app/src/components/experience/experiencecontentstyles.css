@@ -69,15 +69,61 @@
 
 .professional-section {
   margin-top: 4rem;
+  padding: 2rem;
 }
 
-.content-card {
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.skill-card {
   background: rgba(26, 25, 25, 0.9);
   border-radius: 15px;
   padding: 2rem;
-  margin: 2rem auto;
-  max-width: 500px;
   transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.skill-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+}
+
+.skill-card.cybersecurity::before { background: #4CAF50; }
+.skill-card.fullstack::before { background: #2196F3; }
+.skill-card.devops::before { background: #FF9800; }
+.skill-card.problem-solver::before { background: #9C27B0; }
+
+.skill-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.skill-card h3 {
+  color: #fff;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.skill-card p {
+  color: #ccc;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+.cta-section {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 3rem;
 }
 
 @media screen and (max-width: 768px) {
