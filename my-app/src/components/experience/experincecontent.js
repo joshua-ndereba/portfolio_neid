@@ -20,26 +20,26 @@ const experincecontent = () => {
         ))}
       </div>
 
-      <h1>Professional Experience</h1>
-      <div className="content-card">
-        <div className="content-image">
-          <img src={web} alt="Web Development"/>
-          <h1>Full Stack Development</h1>
-          <div className="pro-btns">
-            <NavLink to="/projects" className="btn">View Projects</NavLink>
-            <NavLink 
-              to="https://tryhackme.com/joshuandereba/badges/intro-to-pentesting"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn"
-            >
-              Certifications
-            </NavLink>
+      <div className="professional-section">
+        <h1>Professional Experience</h1>
+        <div className="content-card">
+          <div className="content-image">
+            <img src={web} alt="Web Development"/>
+            <h2>Full Stack Development</h2>
+            <div className="pro-btns">
+              <NavLink to="/projects" className="btn">View Projects</NavLink>
+              <NavLink 
+                to="/certifications"
+                className="btn"
+              >
+                Certifications
+              </NavLink>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
 export default experincecontent

@@ -5,17 +5,6 @@ const Workcard = (props) => {
   return (
     <div className="project-card">
       <div className="image-container">
-<<<<<<< HEAD
-        <img src={props.imgsrc} alt="" />
-        {props.showNote && (
-          <div className="overlay-note">Press here to see details</div>
-        )}
-      </div>
-      <h2 className="project-title">{props.title}</h2>
-      <div className="project-label">Project Details</div> {/* Label Heading */}
-      <div className="pro-details">
-        <p>{props.text}</p>
-=======
         <img src={props.imgsrc} alt={props.title} />
         <div className="overlay">
           <div className="overlay-content">
@@ -36,7 +25,6 @@ const Workcard = (props) => {
             </div>
           )}
         </div>
->>>>>>> d1dded0 ( reinitialized git repo lost all my previous logs, added on mobile responsiveness)
       </div>
     </div>
   );

@@ -19,7 +19,7 @@ const projectcarddata = [
         view: "/contacts"
     },
 
-    {
+    {   
         imgsrc: pro3,
         title: "penetration tester",
         text: "i want to prove that your security is not that great and maybe give you solutions for you problem to avoid later system compromisation. are you in or out " ,

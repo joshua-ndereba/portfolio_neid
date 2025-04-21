@@ -4,84 +4,6 @@
 
 }
 
-<<<<<<< HEAD
-.project-container{
-    width: 500px;
-    
-    margin:auto;
-    display:grid;
-    grid-template-columns: repeat(5. 5fr);
-    grid-gap: 40px;
-    padding-bottom: 5rem;
-
-}
-
-.project-card{
-    background: #1a1919;
-    padding: 0rem 0rem;
-    
-
-}
-
-.image-container {
-  position: relative;
-}
-
-.image-container img {
-  width: 100%;
-}
-
-.overlay-note {
-  position: absolute;
-  bottom: 10px;
-  left: 50%;
-  transform: translateX(-50%);
-  background: rgba(0, 0, 0, 0.6);
-  color: #fff;
-  padding: 5px 10px;
-  font-size: 0.9rem;
-  border-radius: 5px;
-  opacity: 0.8;
-  pointer-events: none;
-}
-
-.project-title{
-    color: #fff;
-    padding: 1rem 0;
-}
- 
-.pro-details p{
-    padding-bottom: 1rem;
-    font-size: 1.1rem;
-    text-align: justify;
-}
-
-.pro-btns{
-    display: flex;
-    justify-content: space-between;
-    padding: 0.5rem 0;
-
-}
-
-.pro-btns .btn{
-    padding: 0.5rem 1rem;
-}
-
-@media screen and (max-width: 740px){
-    .project-container{
-        max-width: 80%;
-        margin: auto;
-        grid-template-columns: 1fr;
-    }    
-}
-
-.project-label {
-  font-size: 15px;
-  font-weight: bold;
-  color: #fff;
-  text-align: center;
-  margin-top: 10px;
-=======
 .project-container {
     width: 100%;
     max-width: 1200px;
@@ -139,6 +61,5 @@
   .project-card {
     margin: 0.5rem 0;
   }
->>>>>>> d1dded0 ( reinitialized git repo lost all my previous logs, added on mobile responsiveness)
 }
 

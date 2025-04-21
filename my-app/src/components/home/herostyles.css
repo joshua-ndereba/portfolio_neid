@@ -56,18 +56,6 @@
     margin: 1rem 0.2rem;
 }
 
-<<<<<<< HEAD
-@media screen and (max-width:640px){
-    .hero .content h1{
-        font-size: 3rem;
-        
-    }
-    
-    
-    .hero .content p{
-        font-size: 1.4rem;
-    }
-=======
 @media screen and (max-width: 768px) {
   .hero .content {
     width: 90%;
@@ -111,6 +99,5 @@
     width: 80%;
     text-align: center;
   }
->>>>>>> d1dded0 ( reinitialized git repo lost all my previous logs, added on mobile responsiveness)
 }
 

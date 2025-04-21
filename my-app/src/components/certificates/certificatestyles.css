@@ -41,22 +41,6 @@
 
 .cert-grid {
   display: grid;
-<<<<<<< HEAD
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
-}
-
-.cert-card {
-  background: rgba(255, 255, 255, 0.05);
-  border-radius: 10px;
-  padding: 1.5rem;
-  transition: transform 0.3s ease;
-}
-
-.cert-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-=======
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 1.5rem;
   padding: 1rem;
@@ -122,24 +106,8 @@
   animation: spin 1s linear infinite;
 }
 
-.cert-error {
-  opacity: 0.5;
-  pointer-events: none;
-}
-
-.cert-error::after {
-  content: "Image unavailable";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: #fff;
-  font-size: 0.9rem;
-}
-
 @keyframes spin {
   to { transform: rotate(360deg); }
->>>>>>> d1dded0 ( reinitialized git repo lost all my previous logs, added on mobile responsiveness)
 }
 
 .modal-overlay {
@@ -148,52 +116,26 @@
   left: 0;
   right: 0;
   bottom: 0;
-<<<<<<< HEAD
-  background: rgba(0, 0, 0, 0.85);
-=======
   background: rgba(0, 0, 0, 0.95);
->>>>>>> d1dded0 ( reinitialized git repo lost all my previous logs, added on mobile responsiveness)
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 1000;
   backdrop-filter: blur(5px);
-<<<<<<< HEAD
-=======
   padding: 1rem;
   animation: fadeIn 0.3s ease;
->>>>>>> d1dded0 ( reinitialized git repo lost all my previous logs, added on mobile responsiveness)
 }
 
 .modal-content {
   background: #1a1919;
   padding: 2rem;
   border-radius: 15px;
-<<<<<<< HEAD
-  width: 90%;
-  max-width: 800px;
-  max-height: 90vh;
-  overflow-y: auto;
-  position: relative;
-}
-
-.close-button {
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
-  background: none;
-  border: none;
-  color: #fff;
-  font-size: 1.5rem;
-  cursor: pointer;
-=======
   width: 100%;
   max-width: 1000px;
   max-height: 90vh;
   overflow: auto;
   position: relative;
   animation: slideUp 0.3s ease;
->>>>>>> d1dded0 ( reinitialized git repo lost all my previous logs, added on mobile responsiveness)
 }
 
 .cert-date {
@@ -203,43 +145,6 @@
 }
 
 .cert-preview {
-<<<<<<< HEAD
-  margin-top: 1.5rem;
-  width: 100%;
-  min-height: 500px;
-  border-radius: 8px;
-  overflow: hidden;
-}
-
-.pdf-viewer {
-  width: 100%;
-  height: 600px;
-  border: none;
-}
-
-.cert-image {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-}
-
-@media screen and (max-width: 768px) {
-  .certification-filters {
-    flex-wrap: wrap;
-  }
-  
-  .modal-content {
-    width: 95%;
-    padding: 1rem;
-  }
-  
-  .cert-preview {
-    min-height: 300px;
-  }
-  
-  .pdf-viewer {
-    height: 400px;
-=======
   background: rgba(0, 0, 0, 0.3);
   border-radius: 8px;
   padding: 1rem;
@@ -268,63 +173,24 @@
   to { transform: translateY(0); opacity: 1; }
 }
 
-/* Enhanced Mobile Responsiveness */
 @media screen and (max-width: 768px) {
-    .certification-filters {
-        flex-wrap: wrap;
-        gap: 0.5rem;
-        margin: 1rem 0;
-    }
-
-    .filter-btn {
-        padding: 0.5rem 1rem;
-        font-size: 0.9rem;
-        flex: 1 1 auto;
-        min-width: 100px;
-    }
-
-    .certifications-container {
-        padding: 1rem;
-    }
-
-    .category-title {
-        font-size: 1.4rem;
-    }
-
-    .cert-grid {
-        gap: 1rem;
-    }
-
-    .cert-card {
-        margin: 0;
-    }
-
-    .modal-content {
-        width: 95%;
-        height: auto;
-        max-height: 90vh;
-        margin: 1rem;
-        padding: 1rem;
-    }
-
-    .cert-preview {
-        height: auto;
-        min-height: 200px;
-    }
-
-    .cert-preview img {
-        max-height: 60vh;
-    }
-}
-
-/* Larger screens */
-@media screen and (min-width: 1200px) {
-  .cert-grid {
-    grid-template-columns: repeat(3, 1fr);
+  .certification-filters {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin: 1rem 0;
   }
 
-  .modal-content {
-    max-width: 1200px;
->>>>>>> d1dded0 ( reinitialized git repo lost all my previous logs, added on mobile responsiveness)
+  .filter-btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  .cert-preview {
+    height: auto;
+    min-height: 200px;
+  }
+
+  .cert-preview img {
+    max-height: 60vh;
   }
 }

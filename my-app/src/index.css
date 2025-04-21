@@ -5,18 +5,13 @@
     margin: 0;
     padding: 0;
     font-family: "Outfit", sans-serif;
-<<<<<<< HEAD
-=======
     -webkit-tap-highlight-color: transparent;
->>>>>>> d1dded0 ( reinitialized git repo lost all my previous logs, added on mobile responsiveness)
 }
 
 body {
     background: #0a0a0a;
     color: #fff;
     line-height: 1.6;
-<<<<<<< HEAD
-=======
     overflow-x: hidden;
     width: 100%;
     position: relative;
@@ -35,7 +30,6 @@ body {
     p {
         font-size: 1rem;
     }
->>>>>>> d1dded0 ( reinitialized git repo lost all my previous logs, added on mobile responsiveness)
 }
 
 h1,
