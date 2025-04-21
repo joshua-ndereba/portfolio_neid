@@ -4,17 +4,8 @@
   "outputDirectory": "my-app/build",
   "routes": [
     {
-      "src": "/api/(.*)",
-      "dest": "/api/$1"
-    },
-    {
       "src": "/(.*)",
-      "dest": "/my-app/$1"
+      "dest": "/index.html"
     }
-  ],
-  "env": {
-    "EMAIL": "@email",
-    "APP_PASSWORD": "@app_password",
-    "REACT_APP_API_URL": "@api_url"
-  }
+  ]
 }
