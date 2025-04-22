@@ -1,5 +1,5 @@
 import "./footerstyle.css";
-import { FaFacebook, FaTwitter, FaHome, FaLinkedin, FaMailBulk, FaPhone } from "react-icons/fa";
+import {  FaTwitter, FaHome, FaLinkedin, FaMailBulk, FaPhone, FaInstagram } from "react-icons/fa";
 import React, { useState } from 'react';
 
 const Footer = () => {
@@ -31,25 +31,42 @@ const Footer = () => {
           </div>
 
           <div className="right">
-              <h4>About the Company</h4>
-              <p className={isExpanded ? 'expanded' : ''}>
-                  This is me, Joshua Ndereba, a certified and qualified security engineer. I enjoy discussing new projects, implementing new security
-                  models, and joining the fight against cyber criminals. I am also into DevOps and software engineering.
-              </p>
-              <span className="read-more" onClick={() => setIsExpanded(!isExpanded)}>
-                {isExpanded ? 'Read Less' : 'Read More'}
-              </span>
-              <br />
+              <h4>About Me</h4>
+              <div className="about-content">
+                  <p className={isExpanded ? 'expanded' : ''}>
+                      I'm Joshua Ndereba, a certified Security Engineer and DevOps enthusiast. 
+                      My expertise includes:
+                      <ul className="expertise-list">
+                          <li>Security Implementation & Analysis</li>
+                          <li>Cybersecurity Solutions</li>
+                          <li>DevOps Practices</li>
+                          <li>Software Engineering</li>
+                      </ul>
+                      {isExpanded && (
+                          <span className="additional-info">
+                              I'm passionate about implementing robust security models 
+                              and contributing to the fight against cyber threats while 
+                              maintaining modern development practices.
+                          </span>
+                      )}
+                  </p>
+                  <button 
+                      className="read-more-btn" 
+                      onClick={() => setIsExpanded(!isExpanded)}
+                  >
+                      {isExpanded ? 'Show Less' : 'Read More'}
+                  </button>
+              </div>
               <br />
               <h4>Connect with me</h4> 
               <div className="social">
-                  <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
-                      <FaFacebook size={30} style={{color: "#fff", marginRight: "1rem"}} />
+                  <a href="https://www.instagram.com/_short._.neid_/" target="_blank" rel="noopener noreferrer">
+                      <FaInstagram size={30} style={{color: "#fff", marginRight: "1rem"}} />
                   </a>
                   <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
                       <FaTwitter size={30} style={{color: "#fff", marginRight: "1rem"}} />
                   </a>
-                  <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+                  <a href="www.linkedin.com/in/joshua-ndereba" target="_blank" rel="noopener noreferrer">
                       <FaLinkedin size={30} style={{color: "#fff", marginRight: "1rem"}} />
                   </a>
               </div>
