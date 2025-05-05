@@ -12,6 +12,9 @@ import prerequisitesDevOps from "../assets/certifications/prerequisitesdevops.pn
 import linuxBasics from "../assets/certifications/linuxbasics.png";
 import shellScripts from "../assets/certifications/shellscripts.png";
 import thmBadges from "../assets/certifications/THM-BADGES.png";
+import gitcert from "../assets/certifications/gitcert.png";
+// Importing images directly allows for better bundling and optimization
+// and avoids issues with dynamic imports or paths.
 
 const certificationsData = [
   {
@@ -51,6 +54,12 @@ const certificationsData = [
         description: "Advanced shell scripting for automation and system management",
         image: shellScripts,
         date: "2023"
+      },
+      {
+        title: "Git and github",
+        description: " practical understanding of version control principles, enabling efficient code tracking, collaboration, and project management using Git",
+        image: gitcert,
+        date: "2025"
       }
     ]
   },

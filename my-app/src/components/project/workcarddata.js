@@ -3,6 +3,7 @@ import pro2 from "../../assets/2.png"
 import pro3 from "../../assets/3.png"
 import pro4 from "../../assets/4.png"
 import pro5 from "../../assets/5.png"
+//import pro6 from "../../assets/expessbus.mp4"
 
 const projectcarddata = [
     {
@@ -21,6 +22,7 @@ const projectcarddata = [
         text: "Full-stack bus ticketing system with user authentication, booking management, and payment integration.",
         technologies: ["Node.js", "Express", "MongoDB", "React"],
         githubUrl: "https://github.com/joshua-ndereba/expressbus.git",
+        //liveDemo: "/home/neid/projects/portfolio_neid/my-app/src/assets/expressbus.mp4",
         description: "Bus ticketing platform with user-friendly interface."
     },
         
