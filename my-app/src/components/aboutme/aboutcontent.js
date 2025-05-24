@@ -38,6 +38,16 @@ const AboutContent = () => {
         <Link to="/contacts">
           <button className="btn">Contact Me</button>
         </Link>
+        <div style={{ marginTop: "2rem" }}>
+          <h2>My Resume</h2>
+          <iframe
+            src="/assets/resume/joshuaresume.pdf"
+            width="100%"
+            height="600px"
+            title="Joshua's Resume"
+            style={{ border: "none" }}
+          />
+        </div>
       </div>
 
       <div className="right">
