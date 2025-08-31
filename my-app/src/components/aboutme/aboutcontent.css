@@ -1,25 +1,95 @@
 .about {
-  display: grid;
-  grid-template-columns: 3fr 2fr;
-  gap: 2rem;
-  padding: 4rem 6rem;
-  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 5rem 2rem;
+  background:
+    linear-gradient(120deg, rgba(19,19,19,0.96) 60%, rgba(77,77,255,0.25) 100%),
+    url("../../assets/image8.jpeg") center center/cover no-repeat;
+  background-blend-mode: overlay;
+  box-shadow: 0 8px 32px rgba(77,77,255,0.10);
+  border-radius: 24px;
 }
+
+
 
 .about-text {
-  max-width: 800px;
-  margin: 1.5rem 0;
+  max-width: 700px;
+  margin: 2rem 2rem 2rem 0;
+  color: #fff;
+  padding: 2.5rem 2rem;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(77,77,255,0.10);
+  backdrop-filter: blur(2px);
+  border: 1px solid rgba(77,77,255,0.12);
+  animation: fadeInUp 1.2s cubic-bezier(.77,0,.18,1) 0.2s both;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s cubic-bezier(.77,0,.18,1), transform 0.8s cubic-bezier(.77,0,.18,1);
 }
 
+.about-text.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 .about-text p {
   margin-bottom: 1.5rem;
-  line-height: 1.7;
+  line-height: 1.8;
+  font-size: 1.18rem;
+  color: #f8f8ff;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.7);
+  animation: fadeIn 1.2s cubic-bezier(.77,0,.18,1) both;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.7s cubic-bezier(.77,0,.18,1), transform 0.7s cubic-bezier(.77,0,.18,1);
+}
+
+.about-text p.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.about-text h1 {
+  animation: fadeInUp 1.4s cubic-bezier(.77,0,.18,1) 0.3s both;
+  color: #fff;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.7);
+}
+
+.about-text h2 {
+  animation: fadeInUp 1.6s cubic-bezier(.77,0,.18,1) 0.4s both;
+  color: #fff;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.7);
+}
+
+.about-text strong {
+  animation: fadeInUp 1.8s cubic-bezier(.77,0,.18,1) 0.5s both;
+  color: #fff;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.7);
 }
 
 .img-container {
-  position: relative;
-  height: 500px;
-  width: 100%;
+  display: none;
 }
 
 .img-container .top {
@@ -52,13 +122,14 @@
 
 @media screen and (max-width: 1040px) {
   .about {
-    grid-template-columns: 1fr;
-    padding: 2rem;
+    flex-direction: column;
+    padding: 1.5rem;
+    border-radius: 0;
   }
-  
-  .img-container {
-    height: 400px;
-    margin-top: 2rem;
+  .about-text {
+    margin: 1.5rem 0;
+    padding: 1.5rem 1rem;
+    border-radius: 12px;
   }
 }
 

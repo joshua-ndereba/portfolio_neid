@@ -4,7 +4,7 @@ import React from 'react';
 import { Link } from "react-router-dom";
 
 import stack1 from "../../assets/4.png";
-import stack2 from "../../assets/image8.jpeg";
+
 
 const AboutContent = () => {
   return (
@@ -55,9 +55,7 @@ const AboutContent = () => {
           <div className="top">
             <img src={stack1} alt="Tech stack 1" />
           </div>
-          <div className="bottom">
-            <img src={stack2} alt="Tech stack 2" />
-          </div>
+         
         </div>
       </div>
     </div>
