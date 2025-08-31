@@ -15,6 +15,27 @@
 
 }
 
+.project-filter {
+  width: 100%;
+  max-width: 400px;
+  padding: 0.8rem 1.2rem;
+  border-radius: 8px;
+  border: 1px solid #4d4dff;
+  background: rgba(255,255,255,0.07);
+  color: #fff;
+  font-size: 1.1rem;
+  margin: 2rem auto;
+  display: block;
+  box-shadow: 0 2px 8px rgba(77,77,255,0.08);
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.project-filter:focus {
+  border-color: #64ffda;
+  box-shadow: 0 4px 16px rgba(100,255,218,0.15);
+  outline: none;
+}
+
 .bg::before{
     content: "";
     background: url("../../assets/image7.jpeg");
@@ -37,6 +58,7 @@
     font-size: 1.4rem;
     text-align: center;
 }
+
 
 @media screen and (max-width: 640px){
     .bg h1{

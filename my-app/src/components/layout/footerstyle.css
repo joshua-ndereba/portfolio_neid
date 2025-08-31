@@ -13,6 +13,35 @@
     padding: 0 2rem;
 }
 
+/* ...existing code... */
+
+.read-more-btn {
+  background: linear-gradient(90deg, #119fd7 0%, #64ffda 100%);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.8rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(77,77,255,0.12);
+  transition: background 0.3s, transform 0.2s, box-shadow 0.3s;
+  margin: 1.5rem auto;
+  display: block;
+  letter-spacing: 0.05em;
+}
+
+.read-more-btn:hover,
+.read-more-btn:focus {
+  background: linear-gradient(90deg, #64ffda 0%, #4d4dff 100%);
+  color: #222;
+  transform: translateY(-3px) scale(1.04);
+  box-shadow: 0 6px 18px rgba(100,255,218,0.18);
+  outline: none;
+}
+
+/* ...existing code... */
+
 @media screen and (max-width: 768px) {
     .footer {
         padding: 2rem 0;

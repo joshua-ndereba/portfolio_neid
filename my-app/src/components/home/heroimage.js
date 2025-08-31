@@ -3,7 +3,7 @@ import React from 'react';
 import profileImg from "../../assets/6.png";
 import bgImage from "../../assets/image2.jpeg";
 import { Link } from "react-router-dom";
-import { FaGithub } from 'react-icons/fa';
+import { FaGithub } from "react-icons/fa";
 
 const Heroimage = () => {
   const roles = ["Frontend Developer", "Security Analyst", "DevOps Engineer"];
