@@ -3,14 +3,17 @@ import Navbar from "../components/layout/navbar";
 import Form from "../components/contact/form";
 import Footer from "../components/layout/footer";
 import Bgprojects from "../components/project/bgprojects";
-const contacts = () => {
+const Contacts = () => {
   return <div>
     <Navbar />
-    <Bgprojects  heading="Contacts" text="let us have a conversation." />
+    <Bgprojects
+      heading="Get In Touch"
+      text="Let's collaborate on something amazing together"
+    />
     <Form />
     <Footer />
   </div>;
-  
+
 };
 
-export default contacts;
+export default Contacts;

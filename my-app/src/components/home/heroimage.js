@@ -6,7 +6,11 @@ import { Link } from "react-router-dom";
 import { FaGithub } from "react-icons/fa";
 
 const Heroimage = () => {
-  const roles = ["Frontend Developer", "Security Analyst", "DevOps Engineer"];
+  const roles = [
+    "Full-Stack Developer",
+    "Security Engineer",
+    "Cloud & DevOps Specialist"
+  ];
 
   return (
     <div className="hero">
@@ -18,7 +22,7 @@ const Heroimage = () => {
             <h3 className="intro-text">Hello, I'm</h3>
             <h1 className="name">Joshua Ndereba</h1>
             <br />
-            
+
             <ul className="roles-list">
               {roles.map((role, index) => (
                 <li key={index} className="role-item">{role}</li>
@@ -26,8 +30,9 @@ const Heroimage = () => {
             </ul>
 
             <p className="description">
-              Passionate about creating secure, scalable, and beautiful web applications.
-              Specializing in modern web technologies and cloud infrastructure.
+              Transforming ideas into secure, scalable, and innovative digital solutions.
+              I specialize in building modern web applications, implementing robust security measures,
+              and architecting cloud infrastructure that powers the future of technology.
             </p>
             <br />
             <br />

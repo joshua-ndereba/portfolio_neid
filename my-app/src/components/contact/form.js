@@ -23,7 +23,7 @@ const Form = () => {
     setIsLoading(true);
 
     try {
-      const response = await fetch(`${process.env.REACT_APP_API_URL}/api/contact`, {
+      const response = await fetch('/api/contact', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -32,7 +32,7 @@ const Form = () => {
       });
 
       if (!response.ok) throw new Error('Failed to send message');
-      
+
       setSuccess("Thank you! I'll respond to your message soon.");
       setFormData({ name: "", email: "", subject: "", message: "" });
     } catch (err) {
@@ -95,9 +95,9 @@ const Form = () => {
           />
         </div>
 
-        <button 
-          className={`btn ${isLoading ? 'loading' : ''}`} 
-          type="submit" 
+        <button
+          className={`btn ${isLoading ? 'loading' : ''}`}
+          type="submit"
           disabled={isLoading}
         >
           {isLoading ? 'Sending...' : 'Send Message'}

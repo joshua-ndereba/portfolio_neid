@@ -19,8 +19,11 @@ const Projects = () => {
   return (
     <div>
       <Navbar />
-      <Bgprojects heading="PROJECTS." text="Some of my most recent works" />
-      
+      <Bgprojects
+        heading="My Projects"
+        text="Innovative solutions built with passion and precision"
+      />
+
       <div className="projects-wrapper">
         <div className="filter-section">
           <input
@@ -41,16 +44,16 @@ const Projects = () => {
             <h3>{selectedProject.title}</h3>
             <p>{selectedProject.description}</p>
             <div className="project-links">
-              <a 
-                href={selectedProject.githubUrl} 
-                target="_blank" 
+              <a
+                href={selectedProject.githubUrl}
+                target="_blank"
                 rel="noopener noreferrer"
                 className="btn"
               >
                 View Source
               </a>
               {selectedProject.liveDemo && (
-                <a 
+                <a
                   href={selectedProject.liveDemo}
                   target="_blank"
                   rel="noopener noreferrer"

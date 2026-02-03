@@ -7,11 +7,14 @@ import Bgprojects from "../components/project/bgprojects";
 const experience = () => {
   return <div>
     <Navbar />
-    <Bgprojects  heading="Experience" text="past experiences and education" />
+    <Bgprojects
+      heading="Experience & Education"
+      text="My professional journey and academic background"
+    />
     <Experincecontent />
     <Footer />
-</div>;
-  
+  </div>;
+
 };
 
 export default experience;

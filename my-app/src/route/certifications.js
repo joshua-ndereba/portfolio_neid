@@ -96,10 +96,13 @@ const Certifications = () => {
   return (
     <div>
       <Navbar />
-      <Bgprojects heading="Certifications" text="Professional Achievements & Skills" />
-      
+      <Bgprojects
+        heading="Certifications & Achievements"
+        text="Validated expertise and continuous professional development"
+      />
+
       <div className="certification-filters">
-        <button 
+        <button
           className={`filter-btn ${activeCategory === 'all' ? 'active' : ''}`}
           onClick={() => filterCertifications('all')}
         >
@@ -127,7 +130,7 @@ const Certifications = () => {
                     key={index}
                     className={`cert-wrapper ${imageError[`${category.category}-${index}`] ? 'cert-error' : ''}`}
                   >
-                    <CertificationCard 
+                    <CertificationCard
                       {...cert}
                       onClick={() => !imageError[`${category.category}-${index}`] && setSelectedCert(cert)}
                       onImageError={() => handleImageError(`${category.category}-${index}`)}
@@ -153,7 +156,7 @@ const Certifications = () => {
           </div>
         </div>
       )}
-      
+
       <Footer />
     </div>
   );

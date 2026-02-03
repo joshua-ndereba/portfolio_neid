@@ -1,3 +1,4 @@
+
 import { NavLink } from "react-router-dom"; // Use NavLink for routing
 import "./navbarstyles.css";
 import React, { useState } from "react";
@@ -56,15 +57,25 @@ const Navbar = () => {
         </li>
       </ul>
 
-      <div className="hamburger" onClick={handleClick}>
+      <button
+        className="hamburger"
+        onClick={handleClick}
+        aria-label={click ? "Close menu" : "Open menu"}
+        aria-expanded={click}
+      >
         {click ? (
           <FaTimes size={20} style={{ color: "#fff" }} />
         ) : (
           <FaBars size={20} style={{ color: "#fff" }} />
         )}
-      </div>
+      </button>
     </div>
   );
 };
 
 export default Navbar;
+
+
+
+
+
