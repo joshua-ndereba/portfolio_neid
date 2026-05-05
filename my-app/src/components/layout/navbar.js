@@ -1,5 +1,5 @@
 
-import { NavLink } from "react-router-dom"; // Use NavLink for routing
+import { NavLink } from "react-router-dom";
 import "./navbarstyles.css";
 import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
@@ -20,38 +20,39 @@ const Navbar = () => {
 
   return (
     <div className={color ? "header header-bg" : "header"}>
-      <NavLink to="/">
-        <h1>Portfolio</h1>
+      <NavLink to="/" className="logo-container">
+        <h1 className="logo">JN</h1>
+        <span className="logo-subtitle">Joshua Ndereba</span>
       </NavLink>
 
       <ul className={click ? "nav-menu active" : "nav-menu"}>
-        <li>
-          <NavLink to="/" onClick={handleClick}>
+        <li className="nav-item">
+          <NavLink to="/" className={({ isActive }) => isActive ? "nav-link active" : "nav-link"} onClick={handleClick}>
             Home
           </NavLink>
         </li>
-        <li>
-          <NavLink to="/about" onClick={handleClick}>
+        <li className="nav-item">
+          <NavLink to="/about" className={({ isActive }) => isActive ? "nav-link active" : "nav-link"} onClick={handleClick}>
             About
           </NavLink>
         </li>
-        <li>
-          <NavLink to="/experience" onClick={handleClick}>
+        <li className="nav-item">
+          <NavLink to="/experience" className={({ isActive }) => isActive ? "nav-link active" : "nav-link"} onClick={handleClick}>
             Experience
           </NavLink>
         </li>
-        <li>
-          <NavLink to="/certifications" onClick={handleClick}>
+        <li className="nav-item">
+          <NavLink to="/certifications" className={({ isActive }) => isActive ? "nav-link active" : "nav-link"} onClick={handleClick}>
             Certifications
           </NavLink>
         </li>
-        <li>
-          <NavLink to="/projects" onClick={handleClick}>
+        <li className="nav-item">
+          <NavLink to="/projects" className={({ isActive }) => isActive ? "nav-link active" : "nav-link"} onClick={handleClick}>
             Projects
           </NavLink>
         </li>
-        <li>
-          <NavLink to="/contacts" onClick={handleClick}>
+        <li className="nav-item">
+          <NavLink to="/contacts" className={({ isActive }) => isActive ? "nav-link active cta-nav" : "nav-link cta-nav"} onClick={handleClick}>
             Contact
           </NavLink>
         </li>

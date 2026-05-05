@@ -20,26 +20,26 @@ const experincecontent = () => {
       </div>
 
       <div className="professional-section">
-        <h1>Professional Experience & Skills</h1>
+        <h1>Professional Experience & Core Competencies</h1>
         <div className="skills-container">
           <div className="skill-card cybersecurity">
-            <h3>Cybersecurity Enthusiast</h3>
-            <p>Actively building cybersecurity skills, with a focus on vulnerability assessment, ethical hacking, and system hardening. Seeking real-world exposure through a dedicated 3-month attachment. Hands-on with Linux systems and CLI-based debugging workflows.</p>
+            <h3>🛡️ Cybersecurity Specialist</h3>
+            <p>Proven expertise in threat detection, penetration testing, and system hardening. Developed <strong>DERE (Driver)</strong>—an AI-powered SIEM solution for advanced threat investigation. Hands-on experience with Linux hardening, CLI-based security auditing, and vulnerability remediation frameworks.</p>
           </div>
 
           <div className="skill-card fullstack">
-            <h3>Full-Stack Web Developer</h3>
-            <p>Developed <strong>ExpressBus</strong>, a ticketing and schedule management platform using modern frontend frameworks and backend design patterns. Comfortable with API integration, database design, and clean UI/UX presentation.</p>
+            <h3>💻 Full-Stack Engineer</h3>
+            <p>Built production-grade applications including <strong>Tuskize</strong> (AI-powered accessibility app for speech disfluency), <strong>ExpressBus</strong> (ticketing platform with real-time tracking), and responsive web applications. Expert in React, Node.js, database design, and scalable API architecture.</p>
           </div>
 
           <div className="skill-card devops">
-            <h3>Version Control & DevOps Basics</h3>
-            <p>Efficient with Git and GitHub workflows, including branching, rebasing, conflict resolution, and disaster recovery. Uses CLI and GUI tools for full control over code lifecycle.</p>
+            <h3>🚀 DevOps & Cloud Infrastructure</h3>
+            <p>Proficient in Docker, Kubernetes, CI/CD pipelines, and containerized deployments. Experienced with Git workflows, infrastructure automation, and environment-agnostic deployment strategies. Pursuing AWS Cloud Engineering certification.</p>
           </div>
 
           <div className="skill-card problem-solver">
-            <h3>Problem Solver & Continuous Learner</h3>
-            <p>Solves technical roadblocks independently and efficiently. Consistently looking to improve code quality, optimize workflows, and build real-world projects to reinforce academic knowledge.</p>
+            <h3>🎯 Strategic Problem-Solver</h3>
+            <p>Consistently identify bottlenecks, architect scalable solutions, and deliver results independently. Strong track record of turning complex requirements into maintainable, high-performance code. Comfortable working across the entire technology stack.</p>
           </div>
         </div>
 

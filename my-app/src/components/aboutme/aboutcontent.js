@@ -15,20 +15,25 @@ const AboutContent = () => {
         <div className="about-text">
           <div className="intro-section">
             <p>
-              I'm <strong>Joshua Ndereba</strong>, a passionate Computer Science student at <strong>Daystar University</strong>
-              with an insatiable curiosity for building technology that makes a real difference. My journey into tech began
-              not in a classroom, but through countless late nights solving problems I encountered in everyday life—from
-              automating tedious tasks to building tools that help people communicate more effectively.
+              I'm <strong>Joshua Ndereba</strong>, a Computer Science graduand at <strong>Daystar University</strong> 
+              awaiting my degree, with an insatiable curiosity for building technology that makes a real difference. 
+              With years of hands-on experience in full-stack development, cybersecurity, and DevOps, I've moved beyond 
+              theory into proven, production-ready applications. My journey began not in a classroom, but through countless 
+              late nights solving real-world problems—from automating tedious tasks to architecting AI-powered solutions 
+              that help people communicate more effectively. Now, I'm ready to bring this expertise to forward-thinking 
+              organizations ready to innovate.
             </p>
           </div>
 
           <div className="journey-section">
-            <h3 className="section-heading">🚀 My Journey</h3>
+            <h3 className="section-heading">🚀 Professional Evolution</h3>
             <p>
-              What drives me is the intersection of <strong>security, scalability, and user experience</strong>. I've evolved
-              from writing my first "Hello World" to architecting full-stack applications that handle real-world complexity.
-              My expertise spans <strong>software engineering</strong>, <strong>cybersecurity</strong>, and <strong>DevOps</strong>—
-              three pillars that I believe are essential for building modern, resilient systems.
+              What drives me is the intersection of <strong>security, scalability, and user experience</strong>. From my 
+              first "Hello World" to architecting full-stack applications handling real-world complexity, I've built a 
+              proven track record of delivering results. My expertise spans <strong>full-stack development</strong>, 
+              <strong>cybersecurity</strong>, and <strong>DevOps</strong>—three pillars essential for building modern, 
+              resilient systems. I'm not just a developer; I'm a problem-solver who bridges the gap between vision and 
+              execution, delivering products that scale.
             </p>
           </div>
 
@@ -54,12 +59,13 @@ const AboutContent = () => {
           </div>
 
           <div className="approach-section">
-            <h3 className="section-heading">🎯 My Approach</h3>
+            <h3 className="section-heading">🎯 Why I Stand Out</h3>
             <p>
-              I believe in <strong>clean, maintainable code</strong> and <strong>agile development practices</strong>.
-              Every project I touch is an opportunity to learn something new and push the boundaries of what I thought
-              was possible. I'm a strong advocate for <strong>continuous learning</strong>—currently pursuing certifications
-              in <strong>AWS Cloud Engineering</strong>, <strong>CI/CD pipelines</strong>, and <strong>advanced penetration testing</strong>.
+              I don't just write code—I architect solutions. With a focus on <strong>clean, maintainable architecture</strong> 
+              and <strong>agile development practices</strong>, every project is an opportunity to exceed expectations. My proven 
+              ability to deliver production-grade applications, combined with continuous upskilling in <strong>AWS Cloud Engineering</strong>, 
+              <strong>CI/CD automation</strong>, and <strong>advanced penetration testing</strong>, makes me a rare combination: 
+              technically deep yet business-savvy, security-conscious yet user-focused.
             </p>
           </div>
 
@@ -74,12 +80,13 @@ const AboutContent = () => {
           </div>
 
           <div className="future-section">
-            <h3 className="section-heading">🔮 What's Next?</h3>
+            <h3 className="section-heading">🔮 Ready for Impact</h3>
             <p>
-              I'm currently seeking opportunities to collaborate on <strong>innovative projects</strong> that challenge me
-              to grow both technically and personally. Whether it's building the next generation of secure applications,
-              optimizing infrastructure for scale, or creating tools that empower users, I'm ready to bring my
-              <strong> passion, expertise, and relentless curiosity</strong> to your team.
+              As I complete my degree and step into the professional world, I'm actively seeking opportunities to collaborate 
+              on <strong>innovative projects</strong> that challenge me to grow and create tangible value. Whether it's 
+              architecting secure, scalable applications, optimizing infrastructure for enterprise-grade performance, or 
+              creating tools that empower millions of users, I bring <strong>proven expertise, relentless drive, and a 
+              commitment to excellence</strong> to every engagement. I'm ready to move from academic achievement to real-world impact.
             </p>
           </div>
 

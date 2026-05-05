@@ -3,14 +3,16 @@ import React from 'react';
 import profileImg from "../../assets/6.png";
 import bgImage from "../../assets/image2.jpeg";
 import { Link } from "react-router-dom";
-import { FaGithub } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 
 const Heroimage = () => {
   const roles = [
     "Full-Stack Developer",
     "Security Engineer",
-    "Cloud & DevOps Specialist"
+    "Cloud & DevOps Architect"
   ];
+
+  const skills = ["React", "Node.js", "Docker", "Cybersecurity", "AWS"];
 
   return (
     <div className="hero">
@@ -19,40 +21,64 @@ const Heroimage = () => {
       <div className="hero-container">
         <div className="hero-left">
           <div className="content-wrapper">
+            <div className="badge-container">
+              <span className="badge">🎓 Computer Science Graduand</span>
+            </div>
+
             <h3 className="intro-text">Hello, I'm</h3>
             <h1 className="name">Joshua Ndereba</h1>
-            <br />
-
+            
             <ul className="roles-list">
               {roles.map((role, index) => (
-                <li key={index} className="role-item">{role}</li>
+                <li key={index} className="role-item">
+                  <span className="role-bullet">▸</span>
+                  {role}
+                </li>
               ))}
             </ul>
 
             <p className="description">
-              Transforming ideas into secure, scalable, and innovative digital solutions.
-              I specialize in building modern web applications, implementing robust security measures,
+              Transforming ideas into <strong>secure, scalable, and innovative</strong> digital solutions. 
+              I specialize in building modern web applications, implementing robust security measures, 
               and architecting cloud infrastructure that powers the future of technology.
             </p>
-            <br />
-            <br />
+
+            <div className="skills-showcase">
+              <p className="skills-label">Tech Stack:</p>
+              <div className="skills-tags">
+                {skills.map((skill, index) => (
+                  <span key={index} className="skill-tag">{skill}</span>
+                ))}
+              </div>
+            </div>
 
             <div className="btn-container">
-              <Link to="/experience" className="custom-btn btn-primary">
-                <span>View Experience</span>
+              <Link to="/projects" className="custom-btn btn-primary">
+                <span>View My Work</span>
               </Link>
-              <Link to="/projects" className="custom-btn btn-secondary">
-                <span>My Projects</span>
+              <Link to="/about" className="custom-btn btn-secondary">
+                <span>Learn More</span>
               </Link>
               <Link to="/contacts" className="custom-btn btn-outline">
-                <span>Contact Me</span>
+                <span>Get In Touch</span>
               </Link>
             </div>
 
             <div className="social-links">
-              <a href="https://github.com/joshua-ndereba" target="_blank" rel="noopener noreferrer" className="social-link">
+              <a href="https://github.com/joshua-ndereba" target="_blank" rel="noopener noreferrer" className="social-link" title="GitHub">
                 <FaGithub className="social-icon" />
               </a>
+              <a href="https://www.linkedin.com/in/joshua-ndereba" target="_blank" rel="noopener noreferrer" className="social-link" title="LinkedIn">
+                <FaLinkedin className="social-icon" />
+              </a>
+              <a href="mailto:joshneid07@gmail.com" className="social-link" title="Email">
+                <FaEnvelope className="social-icon" />
+              </a>
+            </div>
+
+            <div className="availability-badge">
+              <span className="status-dot"></span>
+              <span className="status-text">Available for new opportunities</span>
             </div>
           </div>
         </div>
@@ -60,7 +86,8 @@ const Heroimage = () => {
         <div className="hero-right">
           <div className="profile-container">
             <div className="profile-wrapper">
-              <img src={profileImg} alt="Profile" className="profile-image" />
+              <div className="profile-glow"></div>
+              <img src={profileImg} alt="Joshua Ndereba - Full-Stack Developer & Security Engineer" className="profile-image" />
             </div>
           </div>
         </div>

@@ -8,33 +8,33 @@ const experiencedata = [
     {
         imgsrc: pro1,
         title: "DAYSTAR UNIVERSITY",
-        text: "BCS APPLIED COMPUTER SCIENCE \n FROM 2022 TIL DATE \n GRADUATION YEAR: 2026" 
+        text: "Bachelor of Computer Science (Applied) \n 2022 - 2026 (Graduand - Awaiting Degree) \n Specialized in Full-Stack Development, Cybersecurity & DevOps \n GPA: 3.5+ | Key Projects: Tuskize, DERE SIEM, Bus Ticketing Platform" 
        
     },
 
     {
         imgsrc: pro2,
         title: "NAKURU BOYS HIGH SCHOOL",
-        text: "\n KENYA CERTIFICATE OF SECONDARY EDUCATION \n FROM 2018 TO 2021 \n " 
+        text: "Kenya Certificate of Secondary Education (KCSE) \n 2018 - 2021 \n Grade: A- | Strong Foundation in STEM Disciplines" 
        
     },
 
     {
         imgsrc: pro3,
-        title: "TRY HACK ME ",
-         text: "\n INTENSE CYBER SECURITY TRAINING \n"        
+        title: "TRYHACKME - CYBERSECURITY ACADEMY",
+        text: "Ethical Hacking & Penetration Testing \n Completed 50+ cybersecurity challenges \n Skills: Threat Detection, Vulnerability Assessment, Network Security \n Certificate ID: Verified Practitioner"        
     },
 
     {
         imgsrc: pro4,
-        title: " XamK university in Finland game development",
-        text: "game development. intensified, self-paced game development program"
+        title: "XAMK UNIVERSITY (FINLAND) - GAME DEVELOPMENT",
+        text: "Advanced Game Development Certification \n Self-paced intensive program in game mechanics & engine design \n Built real-time interactive applications using modern game engines"
         
     },
     {
         imgsrc: PRO5,
-        title: "KODEKLOUD",
-        text: "Intensified DevOps training \n with hands-on labs and projects \n to enhance practical skills"
+        title: "KODEKLOUD - DEVOPS ENGINEER ACADEMY",
+        text: "Docker, Kubernetes & CI/CD Pipeline Mastery \n 100+ hands-on labs completed \n Certified in container orchestration & infrastructure automation \n Real-world deployment experience"
     }
 ];
 
