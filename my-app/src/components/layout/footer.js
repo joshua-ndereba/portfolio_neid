@@ -1,10 +1,9 @@
 import "./footerstyle.css";
-import {  FaTwitter, FaHome, FaLinkedin, FaMailBulk, FaPhone, FaInstagram, FaGithub, FaCodepen } from "react-icons/fa";
+import { FaTwitter, FaHome, FaLinkedin, FaMailBulk, FaPhone, FaInstagram, FaGithub } from "react-icons/fa";
 import { FiExternalLink } from "react-icons/fi";
-import React, { useState } from 'react';
+import React from 'react';
 
 const Footer = () => {
-  const [isExpanded, setIsExpanded] = useState(false);
 
   return (
     <div className="footer">
